@@ -82,10 +82,10 @@ public class discovery_fragment extends Fragment  {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_discovery,container,false);
         //初始化
-        images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
-        images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
-        images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
-        images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
+        images.add(Data.urlLunBoTu+"lunbotu1.jpg");
+        images.add(Data.urlLunBoTu+"lunbotu2.jpg");
+        images.add(Data.urlLunBoTu+"lunbotu3.jpg");
+
 
         Banner banner = (Banner) view.findViewById(R.id.banner);
         //设置图片加载器
