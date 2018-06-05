@@ -17,6 +17,7 @@ public class Data extends Application {
     public static List<Goods> goodsList_data = new ArrayList<>();
     public static String url=PublicUrl+"/sx/";
     public static String urlImage=PublicUrl+"/sx/user/";
+    public static String urlLunBoTu = url+"/lunbotu/";
     public static User user =new User();
     public static Business business = new Business();
     public static String BusinessUrlImage=PublicUrl+"/sx/business/";
