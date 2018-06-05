@@ -5,6 +5,8 @@ package com.example.lenovo.myapplication;
  */
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.annotation.Nullable;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.youth.banner.Banner;
+import com.youth.banner.listener.OnBannerListener;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -59,11 +62,11 @@ public class follow_fragment extends Fragment {
 
 
         //轮播
-
-        //初始化
-        images.add(Data.urlLunBoTu+"lunbotu1.jpg");
-        images.add(Data.urlLunBoTu+"lunbotu2.jpg");
-        images.add(Data.urlLunBoTu+"lunbotu3.jpg");
+//初始化
+        images.add(Data.url+"lunbotu/lunbotu1.jpg");
+        images.add(Data.url+"lunbotu/lunbotu2.jpg");
+        images.add(Data.url+"lunbotu/lunbotu3.jpg");
+        // images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
 
         Banner banner = (Banner) view.findViewById(R.id.banner);
         //设置图片加载器
@@ -71,9 +74,27 @@ public class follow_fragment extends Fragment {
         //设置图片集合
         banner.setImages(images);
         //banner设置方法全部调用完毕时最后调用
+
+        banner.setOnBannerListener(new OnBannerListener() {
+            @Override
+            public void OnBannerClick(int position) {
+                switch (position){
+                    case 0:
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Data.url+"lunbotu/lunbotu1/index.html")));
+                        break;
+                    case 1:
+                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"lunbotu/lunbotu2/index.html")));
+                        break;
+                    case 2:
+                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"lunbotu/lunbotu3/index.html")));
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+        });
         banner.start();
-
-
 
 
         if (android.os.Build.VERSION.SDK_INT > 9) {
