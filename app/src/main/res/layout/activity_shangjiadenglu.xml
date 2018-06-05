@@ -78,6 +78,20 @@
                 android:textColor="@android:color/white" />
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/back_user_login"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:text="返回用户登陆 >"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

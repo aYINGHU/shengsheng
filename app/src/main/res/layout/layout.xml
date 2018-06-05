@@ -116,7 +116,7 @@
                 android:id="@+id/enter_business_login"
                 android:textColor="@android:color/white"
                 android:textSize="15dp"
-                android:text="进入商家登陆"
+                android:text="进入商家登陆 >"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
