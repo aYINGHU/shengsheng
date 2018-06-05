@@ -1,8 +1,11 @@
 package com.example.lenovo.myapplication;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,10 +60,30 @@ public class SAdapter extends BaseAdapter {
         imageView.setImageResource((int)map.get("src"));
         name.setText(map.get("name").toString());
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                if (position == 3){
 
-
-
+                    AlertDialog.Builder AdBuilder =
+                            new AlertDialog.Builder(context2);
+                    Log.e("okk","okk");
+                    AdBuilder.setTitle("是否确认要退出");
+                    AdBuilder.setNegativeButton("取消",null);
+                    AdBuilder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent("exit_app");
+                            intent.setClass(context2,StartActivty.class);
+                            context2.sendBroadcast(intent);
+                            context2.startActivity(intent);
+                        }
+                    });
+                    AdBuilder.show();
+                }
+            }
+        });
 
         return convertView;
 

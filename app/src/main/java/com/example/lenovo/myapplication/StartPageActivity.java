@@ -1,11 +1,16 @@
 package com.example.lenovo.myapplication;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class StartPageActivity extends AppCompatActivity {
+
+    MyBroadcaseReceiver receiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,8 +19,24 @@ public class StartPageActivity extends AppCompatActivity {
 
         MyAsyncTask asyncTask = new MyAsyncTask();
         asyncTask.execute();
+
+        receiver = new MyBroadcaseReceiver();
+        IntentFilter intentFilter = new IntentFilter("exit_app");
+        registerReceiver(receiver,intentFilter);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(receiver);
+    }
+
+    class MyBroadcaseReceiver extends BroadcastReceiver{
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            finish();
+        }
+    }
     private class MyAsyncTask extends AsyncTask {
 
         @Override
