@@ -23,9 +23,6 @@ public class SettingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_setting);
         List<Map<String,Object>> list=new ArrayList<>();
-        Map<String,Object> map=new HashMap<>();
-        map.put("src",R.drawable.signout);
-        map.put("name","退出登录");
 
         Map<String,Object> map1=new HashMap<>();
         map1.put("src",R.drawable.trash);
@@ -38,10 +35,15 @@ public class SettingActivity extends Activity {
         Map<String,Object> map3=new HashMap<>();
         map3.put("src",R.drawable.privacy_agreement);
         map3.put("name","隐私和协定");
+
+        Map<String,Object> map4=new HashMap<>();
+        map4.put("src",R.drawable.signout);
+        map4.put("name","退出登录");
+
         list.add(map1);
         list.add(map2);
         list.add(map3);
-        list.add(map);
+        list.add(map4);
         SAdapter sadapter=new SAdapter(
                 this,
                 R.layout.list_setting_item,list
@@ -52,6 +54,7 @@ public class SettingActivity extends Activity {
 
         Intent intent = getIntent();
         final int position = intent.getIntExtra("position",-2);
+
 
 
         ImageView set_back = findViewById(R.id.setting_back);
