@@ -110,6 +110,7 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
+
     ////方法二，默认第一fragment
     private void changeFragment(Fragment fm) {
         FragmentManager supportFragmentManager = getSupportFragmentManager();
