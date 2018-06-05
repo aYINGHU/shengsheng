@@ -7,20 +7,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:background="@color/colorPink"
-        android:layout_width="match_parent"
-        android:layout_height="30dp">
-
-    </LinearLayout>
 
     <LinearLayout
-        android:background="@color/colorPink"
+        android:background="@drawable/background_login"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="80dp">
 
         <EditText
+            android:layout_marginTop="13dp"
             android:id="@+id/etSousuo"
             android:layout_width="310dp"
             android:layout_height="40dp"
@@ -29,6 +24,7 @@
             android:singleLine="true"/>
 
         <ImageView
+            android:layout_marginTop="13dp"
             android:id="@+id/ivsousuo"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"

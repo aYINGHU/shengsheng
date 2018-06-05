@@ -39,10 +39,22 @@ public class LoginActivity extends Activity {
     private Button buiness_register;
     private TextView NotLogin;
     private String userString;
+    private TextView UserLogin;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shangjiadenglu);
+
+        UserLogin=findViewById(R.id.enter_business_login);
+        UserLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,StartActivty.class);
+                startActivity(intent);
+            }
+        });
+
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);

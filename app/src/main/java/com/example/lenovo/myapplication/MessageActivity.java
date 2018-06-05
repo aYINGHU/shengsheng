@@ -46,11 +46,21 @@ public class MessageActivity extends Activity {
         public String date;
         public ListView lv;
         public ArrayList<UserNotice> listuser;
+        public ImageView msg_back;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_message);
+
+            msg_back =(ImageView)findViewById(R.id.msg_back);
+            msg_back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+
             lv = (ListView) findViewById(R.id.lv_message);
             OkHttpClient okHttpClient = new OkHttpClient();
             Request request = new Request.Builder()
