@@ -12,4 +12,5 @@
     <color name="Forgetpassword">#260bf0</color>
     <color name="goods_backgroud_color">#f5c803</color>
     <color name="button_color_update">#0b42f7</color>
+    <color name="backgroundlayout">#d2d2d2</color>
 </resources>
