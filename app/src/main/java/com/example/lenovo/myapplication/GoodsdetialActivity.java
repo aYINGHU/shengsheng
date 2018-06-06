@@ -48,6 +48,7 @@ public class GoodsdetialActivity extends Activity {
     private String getReviewStr;
     ListView listView;
 
+    public TextView goodsDetial_back;
 
     public  String getReviewByGet(String goods_id){
         String path = null;
@@ -82,6 +83,14 @@ public class GoodsdetialActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goodsdetial);
+
+        goodsDetial_back = findViewById(R.id.goods_detial_back);
+        goodsDetial_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         Intent intent = getIntent();
         final Goods goods = (Goods) intent.getSerializableExtra("goods");

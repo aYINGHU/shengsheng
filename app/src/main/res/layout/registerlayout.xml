@@ -121,8 +121,8 @@
                 android:text="注  册"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:background="@drawable/background_button_div"/>s
-
+                android:background="@drawable/background_button_div"/>
+=
 
 
     </LinearLayout>

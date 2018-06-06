@@ -44,6 +44,7 @@ public class ShopdetialActivity extends Activity {
     private Button likeBtn;
     private Button messageBtn;
     private Button shoucangBtn;
+    public TextView shopDetial_back;
 
     //关注按钮
 
@@ -111,6 +112,15 @@ public class ShopdetialActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopdetail);
+
+        shopDetial_back = findViewById(R.id.shop_detial_back);
+        shopDetial_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         Intent intent = getIntent();
         final Business business = (Business) intent.getSerializableExtra("business");
         ImageView guanzhubusiness = findViewById(R.id.guanzhubusiness);
