@@ -186,15 +186,6 @@ public class ShopdetialActivity extends Activity {
                 R.layout.shopdetial_list // 列表项布局文件
         );
         lv_shopdetial_list.setAdapter(customAdapter); // 给ListView控件设置适配器
-//        // 给ListView的列表项注册点击事件监听器
-//        lv_discovery_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                Toast.makeText(getApplicationContext(),
-//                        parent.getAdapter().getItem(position).toString(),
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//        });
 
 
     }
