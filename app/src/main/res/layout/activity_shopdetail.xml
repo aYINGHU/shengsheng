@@ -113,6 +113,13 @@
                 android:src="@drawable/icon_red_location"/>
         </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundlayout">
+
+    </LinearLayout>
     <ListView
         android:divider="@null"
         android:id="@+id/lv_shopdetial_list"
