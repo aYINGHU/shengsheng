@@ -46,12 +46,11 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shangjiadenglu);
 
-        UserLogin=findViewById(R.id.enter_business_login);
+        UserLogin=findViewById(R.id.back_user_login);
         UserLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginActivity.this,StartActivty.class);
-                startActivity(intent);
+                finish();
             }
         });
 

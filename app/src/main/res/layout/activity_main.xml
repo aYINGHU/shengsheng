@@ -23,11 +23,12 @@
 </LinearLayout>
 
     <RelativeLayout
+        android:gravity="center"
         android:background="@color/white"
         android:layout_alignBottom="@id/frame_layout"
         android:id="@+id/frame_item"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:orientation="horizontal">
 
 
@@ -41,8 +42,8 @@
 
             <RadioButton
                 android:id="@+id/rbHome"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:button="@null"
                 android:checked="true"
@@ -51,10 +52,10 @@
                 android:gravity="center" />
 
             <RadioButton
-                android:layout_marginLeft="45dp"
+                android:layout_marginLeft="70dp"
                 android:id="@+id/rbShop"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:button="@null"
                 android:checked="false"
                 android:background="@drawable/rabtn_b_selector"
@@ -62,18 +63,15 @@
                 android:gravity="center"/>
 
             <RadioButton
-                android:layout_marginLeft="45dp"
+                android:layout_marginLeft="70dp"
                 android:checked="false"
                 android:id="@+id/rbMessage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:button="@null"
                 android:background="@drawable/rabtn_c_selector"
                 android:textColor="@drawable/rabtn_c_selector"
                 android:gravity="center" />
-
-
-
             </RadioGroup>
         </RelativeLayout>
     </RelativeLayout>
