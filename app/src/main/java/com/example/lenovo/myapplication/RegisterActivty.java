@@ -24,6 +24,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -68,6 +69,14 @@ public class RegisterActivty extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.registerlayout);
 
+
+		ImageView imgBack = findViewById(R.id.imgBack);
+		imgBack.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
 		rusername = findViewById(R.id.Rusername);
 		rpassword = findViewById(R.id.Rpassword);
         button=findViewById(R.id.register);
@@ -121,7 +130,6 @@ public class RegisterActivty extends Activity{
 					if (response.isSuccessful()) {
 						Intent intent = new Intent(RegisterActivty.this,StartActivty.class);
 						startActivity(intent);
-						Log.e("aaaaa","aaaaaaa");
 					} else {
 						throw new IOException("Unexpected code:" + response);
 					}
