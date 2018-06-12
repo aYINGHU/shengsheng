@@ -11,14 +11,15 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_gravity="center"
         android:orientation="horizontal"
         android:background="@android:color/white"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/etSousuoye"
-            android:hint="搜索店铺。。。"
+            android:hint="搜索店铺......"
             android:layout_width="0dp"
             android:layout_weight="9"
             android:layout_height="50dp" />

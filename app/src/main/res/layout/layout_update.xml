@@ -164,7 +164,7 @@
             </LinearLayout>
 
             <Button
-                android:background="@color/colorPink"
+                android:background="@drawable/shape"
                 android:layout_marginTop="15dp"
                 android:id="@+id/baocun"
                 android:layout_width="wrap_content"
