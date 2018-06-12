@@ -22,10 +22,11 @@
             >
 
             <ImageView
+                android:layout_gravity="center"
                 android:id="@+id/update_back"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:background="@drawable/back"/>
             <TextView
                 android:textColor="@color/white"
