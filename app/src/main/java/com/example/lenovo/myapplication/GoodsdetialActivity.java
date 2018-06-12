@@ -108,7 +108,7 @@ public class GoodsdetialActivity extends Activity {
         final EditText edit_bg = findViewById(R.id.pinglun_content);
         Button review_submit = findViewById(R.id.review_submit);
 
-        ImageView guanzhushangpin = findViewById(R.id.guanzhubusiness);
+        ImageView guanzhushangpin = findViewById(R.id.guanzhushangpin);
         guanzhushangpin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
