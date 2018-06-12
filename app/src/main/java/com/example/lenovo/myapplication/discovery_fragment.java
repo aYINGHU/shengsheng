@@ -63,7 +63,7 @@ public class discovery_fragment extends Fragment  {
     private List<Business> businessList;
     private List<Goods> goodsList;
     private String goodsListStr;
-    //private ImageView img_menu;
+    private ImageView img_menu1;
     private DrawerLayout mdrawerlayout;
     private String name;
 
@@ -88,15 +88,15 @@ public class discovery_fragment extends Fragment  {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_discovery,container,false);
 
-//        //侧边栏点击事件
-//        img_menu = view.findViewById(R.id.btn_menu);
-//        mdrawerlayout = view.findViewById(R.id.drawerlayout);
-//        img_menu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mdrawerlayout.openDrawer(Gravity.LEFT);
-//            }
-//        });
+        //侧边栏点击事件
+        img_menu1 = view.findViewById(R.id.btn_menu1);
+        mdrawerlayout = view.findViewById(R.id.drawerlayout);
+        img_menu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mdrawerlayout.openDrawer(Gravity.LEFT);
+            }
+        });
 
 
         //初始化
