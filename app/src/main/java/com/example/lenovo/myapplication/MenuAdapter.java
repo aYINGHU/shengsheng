@@ -66,17 +66,17 @@ public class MenuAdapter extends BaseAdapter {
                     intent = new Intent(context,CollectedActivity.class);
                     intent.putExtra("position",position);
                     context.startActivity(intent);
-                }else if(position==5) {
+                }else if(position==3) {
                     intent = new Intent(context, ServiceActivity.class);
 
                     intent.putExtra("position",position);
                     context.startActivity(intent);
-                }else if(position==4){
+                }else if(position==2){
                     intent = new Intent(context,SettingActivity.class);
 
                     intent.putExtra("position",position);
                     context.startActivity(intent);
-                }else if(position==3){
+                }else if(position==1){
                     intent = new Intent(context,MessageActivity.class);
 
                     intent.putExtra("position",position);

@@ -61,12 +61,7 @@ public class MainActivity extends FragmentActivity {
         Map<String,Object> map1=new HashMap<>();
         map1.put("src",R.drawable.shoucang);
         map1.put("name","收藏");
-        Map<String,Object> map2=new HashMap<>();
-        map2.put("src",R.drawable.address);
-        map2.put("name","此功能已关闭");
-        Map<String,Object> map3=new HashMap<>();
-        map3.put("src",R.drawable.coupon);
-        map3.put("name","此功能正在维护中");
+
         Map<String,Object> map4=new HashMap<>();
         map4.put("src",R.drawable.message_center);
         map4.put("name","消息中心");
@@ -78,10 +73,7 @@ public class MainActivity extends FragmentActivity {
 
 
         list.add(map1);
-        list.add(map2);
-        list.add(map3);
         list.add(map4);
-
         list.add(map6);
 
         list.add(map);
