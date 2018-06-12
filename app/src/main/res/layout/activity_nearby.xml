@@ -27,23 +27,23 @@
 
             <ImageView
                 android:id="@+id/btn_menu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/category"/>
 
             <TextView
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:textSize="19dp"
+                android:textSize="20dp"
                 android:text="附 近"
-                android:layout_width="310dp"
+                android:layout_width="330dp"
                 android:layout_height="wrap_content" />
 
             <ImageView
                 android:id="@+id/ivsousuo"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ssdk_country_search_icon" />
 
