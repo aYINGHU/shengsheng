@@ -10,7 +10,7 @@ import java.util.Map;
  */
 
 public class Data extends Application {
-    public static String PublicUrl="http://crk4fu.natappfree.cc";
+    public static String PublicUrl="http://xx3n4a.natappfree.cc";
     public static String PrivateUrl="http://10.7.84.240:8080";
     public static List<Business> businessList_data = new ArrayList<>();
     public static List<Goods> goodsList_data = new ArrayList<>();
