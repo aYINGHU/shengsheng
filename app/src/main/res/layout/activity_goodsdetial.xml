@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:layout_marginBottom="13dp"
             android:layout_gravity="bottom"
-            android:id="@+id/guanzhubusiness"
+            android:id="@+id/guanzhushangpin"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:src="@drawable/icon_nav_liked"/>
