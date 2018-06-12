@@ -27,6 +27,7 @@ import com.youth.banner.listener.OnBannerListener;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -80,13 +81,13 @@ public class follow_fragment extends Fragment {
             public void OnBannerClick(int position) {
                 switch (position){
                     case 0:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Data.url+"lunbotu/lunbotu1/index.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Data.url+"Shop?name="+ Data.user.getName()+"&password="+Data.user.getPassword())));
                         break;
                     case 1:
-                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"lunbotu/lunbotu2/index.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"Shop?name="+ Data.user.getName()+"&password="+Data.user.getPassword())));
                         break;
                     case 2:
-                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"lunbotu/lunbotu3/index.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(Data.url+"Shop?name="+ Data.user.getName()+"&password="+Data.user.getPassword())));
                         break;
                     default:
                         break;
