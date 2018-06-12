@@ -12,7 +12,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,7 +63,9 @@ public class discovery_fragment extends Fragment  {
     private List<Business> businessList;
     private List<Goods> goodsList;
     private String goodsListStr;
-    String name;
+    private ImageView img_menu;
+    private DrawerLayout mdrawerlayout;
+    private String name;
 
 
 
@@ -83,6 +87,18 @@ public class discovery_fragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_discovery,container,false);
+
+        //侧边栏点击事件
+        img_menu = view.findViewById(R.id.btn_menu);
+        mdrawerlayout = view.findViewById(R.id.drawerlayout);
+        img_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mdrawerlayout.openDrawer(Gravity.LEFT);
+            }
+        });
+
+
         //初始化
         images.add(Data.url+"lunbotu/lunbotu1.jpg");
         images.add(Data.url+"lunbotu/lunbotu2.jpg");
