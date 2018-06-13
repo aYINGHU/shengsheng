@@ -22,9 +22,10 @@
             android:orientation="horizontal"
             >
             <ImageView
+                android:layout_gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:id="@+id/service_back"
                 android:src="@drawable/back"/>
             <TextView

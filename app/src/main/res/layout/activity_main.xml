@@ -54,7 +54,7 @@
                 android:gravity="center" />
 
             <RadioButton
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="80dp"
                 android:id="@+id/rbShop"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -65,11 +65,11 @@
                 android:gravity="center"/>
 
             <RadioButton
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="72dp"
                 android:checked="false"
                 android:id="@+id/rbMessage"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:button="@null"
                 android:background="@drawable/rabtn_c_selector"
                 android:textColor="@drawable/rabtn_c_selector"
