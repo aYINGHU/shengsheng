@@ -82,11 +82,13 @@ public class discovery_fragment extends Fragment  {
     }
 
 
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_discovery,container,false);
+        final View view = inflater.inflate(R.layout.activity_discovery,container,false);
 
         //侧边栏点击事件
         img_menu1 = view.findViewById(R.id.btn_menu1);
@@ -98,14 +100,11 @@ public class discovery_fragment extends Fragment  {
             }
         });
 
-
         //初始化
         images.add(Data.url+"lunbotu/lunbotu1.jpg");
         images.add(Data.url+"lunbotu/lunbotu2.jpg");
         images.add(Data.url+"lunbotu/lunbotu3.jpg");
-        // images.add("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3643251844,1782349203&fm=27&gp=0.jpg");
-
-        Banner banner = (Banner) view.findViewById(R.id.banner);
+        final Banner banner = (Banner) view.findViewById(R.id.banner);
         //设置图片加载器
         banner.setImageLoader(new GlideImageLoader());
         //设置图片集合
@@ -149,8 +148,6 @@ public class discovery_fragment extends Fragment  {
             }
         });
 
-
-
         //获取商家
         listView =view.findViewById(R.id.lv_discovery_list);
         OkHttpClient okHttpClient = new OkHttpClient();
@@ -161,7 +158,6 @@ public class discovery_fragment extends Fragment  {
         try {
             Response response=call.execute();
             businessesListStr = response.body().string();
-
             gson = new Gson();
             type = new TypeToken<List<Business>>(){}.getType();
             businessList = gson.fromJson(businessesListStr,type);
@@ -173,6 +169,7 @@ public class discovery_fragment extends Fragment  {
                 businessList);
         listView.setAdapter(discoveryAdapter);
           return view;
+
        }
 
 

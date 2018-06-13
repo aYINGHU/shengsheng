@@ -27,7 +27,8 @@ public class Data extends Application {
     public static List<Goods> goodsList=new ArrayList<>();
     public static List<Map<String,Goods>> goodsListm=new ArrayList<>();
     public static List<String> typeList=new ArrayList<>();
-
+    public static String businessLocation = new String();
+    public static String userLocation = new String();
     }
 
 
